@@ -1,11 +1,10 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
-%global __provides_exclude_from %{_libdir}/%{name}
-%global __requires_exclude_from %{_libdir}/%{name}
 %define debug_package %{nil}
+%define __noautoreq /usr/bin/gjs
 
 Name:		gnome-sound-recorder
 Version:	3.16.0
-Release:	1
+Release:	2
 Summary:	A simple, modern sound recorder
 License:	GPLv2+ and LGPLv2+
 Group:		Graphical desktop/GNOME
