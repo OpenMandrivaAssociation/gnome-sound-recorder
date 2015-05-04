@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   gnome-sound-recorder-3.14.2.tar.xz: 4204010b24804773f0d8b6e91e41fdb46e12f1b3
+sources:
+  gnome-sound-recorder-3.16.0.tar.xz: 1053960cdee50bdcf238ac77522ab1fac484d078

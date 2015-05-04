@@ -3,8 +3,8 @@
 %global __requires_exclude_from %{_libdir}/%{name}
 
 Name:		gnome-sound-recorder
-Version:	3.14.2
-Release:	%mkrel 1
+Version:	3.16.0
+Release:	1
 Summary:	A simple, modern sound recorder
 License:	GPLv2+ and LGPLv2+
 Group:		Graphical desktop/GNOME
@@ -27,7 +27,7 @@ A simple, modern sound recorder for the GNOME desktop.
 %setup -q
 
 %build
-%configure2_5x --disable-static
+%configure --disable-static
 %make
 
 %install
