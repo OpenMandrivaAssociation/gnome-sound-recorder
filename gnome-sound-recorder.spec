@@ -1,6 +1,7 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 %global __provides_exclude_from %{_libdir}/%{name}
 %global __requires_exclude_from %{_libdir}/%{name}
+%define debug_package %{nil}
 
 Name:		gnome-sound-recorder
 Version:	3.16.0
