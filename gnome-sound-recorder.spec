@@ -3,8 +3,8 @@
 %define __noautoreq /usr/bin/gjs
 
 Name:		gnome-sound-recorder
-Version:	3.28.1
-Release:	2
+Version:	3.28.2
+Release:	1
 Summary:	A simple, modern sound recorder
 License:	GPLv2+ and LGPLv2+
 Group:		Graphical desktop/GNOME
