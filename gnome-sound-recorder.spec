@@ -15,6 +15,7 @@ BuildRequires:  meson
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	gjs
+BuildRequires:  pkgconfig(gjs-1.0)
 BuildRequires:	gsettings-desktop-schemas
 BuildRequires:	desktop-file-utils
 BuildRequires:	gstreamer1.0-tools
