@@ -3,7 +3,7 @@
 %define __noautoreq /usr/bin/gjs
 
 Name:		gnome-sound-recorder
-Version:	3.28.2
+Version:	3.32.0
 Release:	1
 Summary:	A simple, modern sound recorder
 License:	GPLv2+ and LGPLv2+
@@ -11,9 +11,11 @@ Group:		Graphical desktop/GNOME
 URL:		https://wiki.gnome.org/Apps/Polari
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	intltool
+BuildRequires:  meson
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	gjs
+BuildRequires:  pkgconfig(gjs-1.0)
 BuildRequires:	gsettings-desktop-schemas
 BuildRequires:	desktop-file-utils
 BuildRequires:	gstreamer1.0-tools
@@ -36,11 +38,11 @@ A simple, modern sound recorder for the GNOME desktop.
 %setup -q
 
 %build
-%configure --disable-static
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 find %{buildroot} -name '*.la' -delete
 
