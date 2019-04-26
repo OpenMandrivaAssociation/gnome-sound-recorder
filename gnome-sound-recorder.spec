@@ -11,6 +11,7 @@ Group:		Graphical desktop/GNOME
 URL:		https://wiki.gnome.org/Apps/Polari
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	intltool
+BuildRequires:  meson
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gtk+-3.0)
 BuildRequires:	gjs
@@ -36,11 +37,11 @@ A simple, modern sound recorder for the GNOME desktop.
 %setup -q
 
 %build
-%configure --disable-static
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 find %{buildroot} -name '*.la' -delete
 
