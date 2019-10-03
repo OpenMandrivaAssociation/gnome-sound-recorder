@@ -52,7 +52,7 @@ find %{buildroot} -name '*.la' -delete
 %doc NEWS
 %{_bindir}/%{name}
 %{_datadir}/glib-2.0/schemas/*.xml
-%{_datadir}/%{name}
+#{_datadir}/%{name}
 %{_datadir}/applications/org.gnome.SoundRecorder.desktop
 %{_iconsdir}/*/*/*/*
 %{_datadir}/metainfo/org.gnome.SoundRecorder.appdata.xml
