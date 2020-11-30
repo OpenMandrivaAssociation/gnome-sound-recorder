@@ -22,7 +22,9 @@ BuildRequires:	gstreamer1.0-tools
 BuildRequires:	pkgconfig(gstreamer-1.0)
 BuildRequires:	gstreamer1.0-plugins-base
 BuildRequires:	gstreamer1.0-plugins-good
+BuildRequires:  pkgconfig(gstreamer-player-1.0)
 BuildRequires:	gstreamer1.0-flac
+BuildRequires:  pkgconfig(libhandy-1)
 
 Obsoletes:	gnome-media
 Requires:	gjs
@@ -46,13 +48,13 @@ A simple, modern sound recorder for the GNOME desktop.
 
 find %{buildroot} -name '*.la' -delete
 
-%find_lang %{name}
+%find_lang org.gnome.SoundRecorder
 
-%files -f %{name}.lang
+%files -f org.gnome.SoundRecorder.lang
 %doc NEWS
 %{_bindir}/%{name}
 %{_datadir}/glib-2.0/schemas/*.xml
 %{_datadir}/org.gnome.SoundRecorder/org.gnome.SoundRecorder*
 %{_datadir}/applications/org.gnome.SoundRecorder.desktop
 %{_iconsdir}/*/*/*/*
-%{_datadir}/metainfo/org.gnome.SoundRecorder.appdata.xml
+%{_datadir}/metainfo/org.gnome.SoundRecorder.metainfo.xml
