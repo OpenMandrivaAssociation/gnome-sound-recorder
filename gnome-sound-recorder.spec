@@ -3,8 +3,8 @@
 %define __noautoreq /usr/bin/gjs
 
 Name:		gnome-sound-recorder
-Version:	40.0
-Release:	2
+Version:	42.0
+Release:	1
 Summary:	A simple, modern sound recorder
 License:	GPLv2+ and LGPLv2+
 Group:		Graphical desktop/GNOME
@@ -13,7 +13,7 @@ Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version
 BuildRequires:	intltool
 BuildRequires:  meson
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
-BuildRequires:	pkgconfig(gtk+-3.0)
+BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	gjs
 BuildRequires:  pkgconfig(gjs-1.0)
 BuildRequires:	gsettings-desktop-schemas
@@ -24,6 +24,7 @@ BuildRequires:	gstreamer1.0-plugins-base
 BuildRequires:	gstreamer1.0-plugins-good
 BuildRequires:  pkgconfig(gstreamer-player-1.0)
 BuildRequires:	gstreamer1.0-flac
+BuildRequires:  pkgconfig(libadwaita-1) 
 BuildRequires:  pkgconfig(libhandy-1)
 
 Obsoletes:	gnome-media
