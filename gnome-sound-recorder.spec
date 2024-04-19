@@ -4,7 +4,7 @@
 
 Name:		gnome-sound-recorder
 Version:	43.beta
-Release:	4
+Release:	5
 Summary:	A simple, modern sound recorder
 License:	GPLv2+ and LGPLv2+
 Group:		Graphical desktop/GNOME
@@ -33,6 +33,8 @@ Requires:	gsettings-desktop-schemas
 Requires:	gstreamer1.0-plugins-base
 Requires:	gstreamer1.0-plugins-good
 Requires:	gstreamer1.0-flac
+Requires:	gstreamer1.0-gtk
+Requires:	gstreamer1.0-gtk-wayland
 
 %description
 A simple, modern sound recorder for the GNOME desktop.
