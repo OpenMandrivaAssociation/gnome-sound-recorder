@@ -4,7 +4,7 @@
 
 Name:		gnome-sound-recorder
 Version:	43.beta
-Release:	7
+Release:	8
 Summary:	A simple, modern sound recorder
 License:	GPLv2+ and LGPLv2+
 Group:		Graphical desktop/GNOME
