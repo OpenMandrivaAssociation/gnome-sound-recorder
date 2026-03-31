@@ -4,11 +4,11 @@
 
 Name:		gnome-sound-recorder
 Version:	43.beta
-Release:	8
+Release:	9
 Summary:	A simple, modern sound recorder
 License:	GPLv2+ and LGPLv2+
 Group:		Graphical desktop/GNOME
-URL:		https://wiki.gnome.org/Apps/Polari
+URL:		https://wiki.gnome.org/Apps/SoundRecorder
 Source0:	https://download.gnome.org/sources/%{name}/%{url_ver}/%{name}-%{version}.tar.xz
 BuildRequires:	intltool
 BuildRequires:  meson
